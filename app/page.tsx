@@ -1,5 +1,6 @@
 import React from 'react'
 import { AiOutlineLinkedin,AiOutlineGithub, AiOutlineYoutube } from "react-icons/ai";
+import Link from "next/link"
 
 /* AiOutlineInstagram */
 export default function Home() {
@@ -11,11 +12,11 @@ export default function Home() {
       <h3 className='font-semibold'>Full-Stack Developer</h3>
     </div>
     <div className='w-6/12 flex items-center flex-row mr-64'>
-      <ul className=' w-full flex flex-row flex-wrap justify-between items-center'>
-    <li ><AiOutlineLinkedin className='h-12 w-12 cursor-pointer transition duration-300 ease-out hover:text-gray-500'/> </li>
-    <li><AiOutlineGithub className='h-12 w-12 cursor-pointer transition duration-300 ease-out hover:text-gray-500'/></li>
-    <li><AiOutlineYoutube className='h-12 w-12 cursor-pointer transition duration-300 ease-out hover:text-gray-500'/></li>
-      </ul>
+      <div className=' w-full flex flex-row flex-wrap justify-between items-center'>
+    <Link href="https://www.linkedin.com/in/santiago-nicolas-agüero-urquiza-b693a41ba/" ><AiOutlineLinkedin className='h-12 w-12 cursor-pointer transition duration-300 ease-out hover:text-gray-500'/> </Link>
+    <Link href="https://github.com/santiaguero91" ><AiOutlineGithub className='h-12 w-12 cursor-pointer transition duration-300 ease-out hover:text-gray-500'/></Link>
+    <Link href="https://www.youtube.com/@SantiPrograma-mi7qd"><AiOutlineYoutube className='h-12 w-12 cursor-pointer transition duration-300 ease-out hover:text-gray-500'/></Link>
+      </div>
     </div>
     <div>
     <button></button>
