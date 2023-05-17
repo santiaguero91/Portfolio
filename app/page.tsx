@@ -1,6 +1,8 @@
 import React from 'react'
 import { AiOutlineLinkedin,AiOutlineGithub, AiOutlineYoutube } from "react-icons/ai";
 import Link from "next/link"
+import About from "./About/page";
+import {Divider} from "./pageStyle"
 
 /* AiOutlineInstagram */
 export default function Home() {
@@ -18,7 +20,11 @@ export default function Home() {
     <Link href="https://www.youtube.com/@SantiPrograma-mi7qd"><AiOutlineYoutube className='h-12 w-12 cursor-pointer transition duration-300 ease-out hover:text-gray-500'/></Link>
       </div>
     </div>
+    <Divider/>
     <div>
+      <About/>
+    <Divider/>
+
     <button></button>
     </div>
     </div>

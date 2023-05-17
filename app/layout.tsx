@@ -1,6 +1,7 @@
 import './globals.css'
 import { Lora } from 'next/font/google'
 import Navigation from "./Components/Navigation"
+import StyledComponentsRegistry from "../registry"
 
 const inter = Lora({ subsets: ['latin'] })
 
@@ -17,7 +18,9 @@ export default function RootLayout({children,}: {
     <html lang="en">
       
       <body className={inter.className}>
+<StyledComponentsRegistry>
         <Navigation/>
+        </StyledComponentsRegistry>
       {children}</body>
     </html>
 

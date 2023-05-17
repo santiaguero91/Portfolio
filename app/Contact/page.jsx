@@ -1,10 +1,12 @@
 import React from 'react'
+import {Container} from "./pageStyle"
+
 
 export default function Contact() {
   return (
-    <div>
+    <Container>
       <h1>This is Contact</h1>
-    </div>
+    </Container>
   )
 
 }
