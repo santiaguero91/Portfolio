@@ -1,22 +1,36 @@
 import React from 'react'
 import Link from "next/link"
+import { ItemLista } from "./NavigationStyle";
 
 export default function Navigation() {
   return (
     <div className="container flex flex-wrap items-center justify-end mx-auto">
       <ul className="flex flex-col items-end pt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-bold ">
-        <li className="text-lg">
+        <ItemLista
+        initial={{y: -50, opacity: 0}}
+        animate={{y: 0, opacity: 1}}
+        transition={{delay: 0.8 , transition:{duration:2}}}
+        >
           <Link href="/">Home</Link>
-        </li>
-        <li className="text-lg">
+        </ItemLista>
+        <ItemLista 
+        initial={{y: -50, opacity: 0}}
+        animate={{y: 0, opacity: 1}}
+        transition={{ delay: 1.2 , transition:{duration:2}}}>
           <Link href="/About">About</Link>
-        </li>
-        <li className="text-lg">
+        </ItemLista>
+        <ItemLista 
+        initial={{y: -50, opacity: 0}}
+        animate={{y: 0, opacity: 1}}
+        transition={{ delay: 1.6 , transition:{duration:2}}}>
           <Link href="/Works">Works</Link>
-        </li>
-        <li className="text-lg">
+        </ItemLista>
+        <ItemLista
+        initial={{y: -50, opacity: 0}}
+        animate={{y: 0, opacity: 1}}
+        transition={{ delay: 2 , transition:{duration:2}}}>
           <Link href="/Contact">Contact</Link>
-        </li>
+        </ItemLista>
       </ul>
     </div>
   )

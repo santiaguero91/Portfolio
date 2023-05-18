@@ -1,4 +1,5 @@
 'use client';
+import { motion } from "framer-motion";
 
 import styled from 'styled-components';
 
@@ -32,7 +33,7 @@ margin-bottom: 0.75rem;
 `;
 
 
-export const ContactMe = styled.button`
+export const ContactMe = styled.div`
 margin-left: auto;
 margin-right: auto;
 margin-top: 10px;
