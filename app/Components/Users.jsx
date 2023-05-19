@@ -11,6 +11,9 @@ const paginas = [
     link: "https://cardigangym-santiaguero91.vercel.app",
     logo: cardigan,
     photo: cardiganhome,
+    photo2: cardiganhome,
+    photo3: cardiganhome,
+
     description: "Ecommerce for training gear and products for gyms and/or homes."
   },
   { 
@@ -19,6 +22,8 @@ const paginas = [
     link: "https://www.youtube.com/watch?v=biCLAKvbA3s",
     logo: countries,
     photo: cardiganhome,
+    photo2: cardiganhome,
+    photo3: cardiganhome,
     description: "Webpage used to  search countries and their activities."
   },
 ];
