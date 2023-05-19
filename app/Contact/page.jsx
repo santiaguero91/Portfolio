@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import {
   Container,
   FormPlaque,
@@ -9,6 +9,9 @@ import {
   WorkTogether,
 } from "./pageStyle";
 import validate from "./FormValidation";
+import emailjs from '@emailjs/browser';
+
+
 
 export default function Contact() {
   const [input, setInput] = useState({
@@ -49,11 +52,45 @@ export default function Contact() {
     alert("mail was created successfully!!");
   };
 
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+    .sendForm(
+    'service_v64g5dl', 
+    'template_px93v9a', 
+    form.current, 
+    'Ti-An7b8pQPTdvflG')
+      .then((result) => {
+          console.log(result.text);
+          console.log("message send");
+
+          setInput({
+            name: "",
+            phone: "",
+            email: "",
+            text: "",
+          });
+
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+
   return (
     <Container>
       <WorkTogether>¡I'm eager to work together!</WorkTogether>
       <FormPlaque>
-        <InputContainer>
+
+
+      <form ref={form} onSubmit={sendEmail}>
+
+
+      <InputContainer>
           <input
             id="inputname"
             type="text"
@@ -64,6 +101,7 @@ export default function Contact() {
             placeholder="Name"
           />
         </InputContainer>
+
         <InputContainer>
           <input
             id="phone"
@@ -75,6 +113,7 @@ export default function Contact() {
             placeholder="Phone"
           />
         </InputContainer>
+
         <InputContainer>
           <input
             id="inputemail"
@@ -86,6 +125,8 @@ export default function Contact() {
             placeholder="Email"
           />
         </InputContainer>
+
+    
         <InputContainer>
           <textarea
             id="text"
@@ -97,13 +138,14 @@ export default function Contact() {
             placeholder="Message me..."
           />
         </InputContainer>
-        {input.name !== "" &&
+
+      {input.name !== "" &&
       input.phone !== "" &&
       input.email !== "" &&
       input.text !== "" ? (
         <SendButton
           id="submitButton"
-          onClick={(e) => handleSubmit(e)}
+          onClick={(e) => sendEmail(e)}
           type="submit"
         >
           Send To Email
@@ -112,14 +154,24 @@ export default function Contact() {
         <SendButton
           id="submitButton"
           disabled
-          onClick={(e) => handleSubmit(e)}
+          onClick={(e) => sendEmail(e)}
           type="submit"
+          value="Send"
         >
           Send To Email
         </SendButton>
       )}
+    </form>
+
+
+
+        
+        
+        
+        
+       
       </FormPlaque>
-      
+
     </Container>
   );
 }

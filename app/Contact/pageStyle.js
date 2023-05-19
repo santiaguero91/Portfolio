@@ -30,6 +30,15 @@ box-shadow: rgba(0, 89, 89, 0.3) 8px 8px 30px;
 //box-shadow: rgba(0, 172, 193, 0.2) 0px 54px 55px, rgba(0, 172, 193, 0.2) 0px -12px 30px, rgba(0, 172, 193, 0.2) 0px 4px 6px, rgba(0, 172, 193, 0.2) 0px 12px 13px, rgba(0, 172, 193, 0.2) 0px -3px 5px;
 // 172, 193
 
+
+form{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
  
  `;
 
