@@ -1,83 +1,57 @@
 "use client";
-
+import Card from "./Card";
 import cardigan from "../img/cardigan.png";
 import countries from "../img/countries.png";
-import Image from "next/image";
-import Link from "next/link";
 import cardiganhome from "../img/CardiganHome.png";
 import HChome from "../img/HCountriesHome.png";
+import HClandin from "../img/HCLanding.png";
+import HCdetail from "../img/HCDetails.png";
+import HCform from "../img/HCForm.png";
+import Clandin from "../img/CLandin.png";
+// import CDash from "../img/CDash.png";
+import Cdetail from "../img/CDetail.png";
+import CCart from "../img/CCart.png";
 import {
   Container,
-  CardDiv,
-  ProyectsName,
-  ProyDescrip,
-  CardStats,
-  RightArrowStyles,
-  LeftArrowStyles,
-  ImageContainer,
 } from "./CardsStyle";
-import { useState } from "react";
 const paginas = [
   {
     id: 1,
     name: "CargiganGym",
     link: "https://cardigangym-santiaguero91.vercel.app",
+    tecnologies:["html", "Javascript", "React", "Redux", "stlyedComponents", "Firebase", "auth0", "PostgreSql", ],
     logo: cardigan,
-    photo: cardiganhome,
-    photo2: cardiganhome,
-    photo3: cardiganhome,
-
+    photos: [cardiganhome,Cdetail,CCart,Clandin],
     description:
       "Ecommerce for training gear and products for gyms and/or homes.",
   },
   {
     id: 2,
     name: "Henry-Countries",
-    link: "https://www.youtube.com/watch?v=biCLAKvbA3s",
+    tecnologies:["html", "Javascript", "React", "Redux", "stlyedComponents", "APIs Integrations", "PostgreSql", ],
+
+    link: "https://pi-countries-santiaguero91.vercel.app/home",
     logo: countries,
-    photo: HChome,
-    photo2: cardiganhome,
-    photo3: cardiganhome,
+    photos: [HChome,HCdetail, HCform,HClandin],
     description: "Webpage used to  search countries and their activities.",
   },
 ];
 
 function Cards() {
-  const [ordenamiento, setOrdenamiento] = useState(0);
-
   return (
     <Container>
-      {paginas.map((pagina) => (
-        <Link href={pagina.link}>
-          <CardDiv
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
-          >
-            <CardStats>
-              <div className="w-1/12 absolute rounded-full">
-                <Image
-                  src={pagina.logo}
-                  alt="logo"
-                  className="w-1/2 absolute rounded-full"
-                />
-              </div>
-              <ProyectsName>{pagina.name}</ProyectsName>
-              <ProyDescrip>{pagina.description}</ProyDescrip>
-              <ImageContainer>
-                <LeftArrowStyles> ❰ </LeftArrowStyles>
-                <Image
-                  src={pagina.photo}
-                  alt="foto"
-                  className="mx-auto rounded-lg "
-                />
-                <RightArrowStyles> ❱ </RightArrowStyles>
-              </ImageContainer>
-
-              <div className="flex flex-col"></div>
-            </CardStats>
-          </CardDiv>
-        </Link>
-      ))}
+      {paginas.map((pagina) => {
+    return (
+        <Card 
+        key={pagina.id}
+        name={pagina.name}
+        link={pagina.link}
+        logo={pagina.logo}
+        photos={pagina.photos}
+        description={pagina.description}
+        />)
+    }    
+      )}
     </Container>
   );
 }

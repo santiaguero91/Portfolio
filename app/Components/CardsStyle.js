@@ -22,16 +22,12 @@ export const CardDiv = styled(motion.div)`
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 
-  :hover {
-    background-color: rgb(145, 145, 132);
-  }
 `;
 
 export const ImageContainer = styled(motion.div)`
 position: relative;
 width: fit-content;
 height: fit-content;
-  background-color: blue;
   display: flex;
   flex-direction: row;
 `;
@@ -39,9 +35,6 @@ height: fit-content;
 export const CardStats = styled(motion.div)`
   display: flex;
   flex-direction: column;
-
-
-
 `;
 
 
@@ -50,9 +43,9 @@ export const RightArrowStyles = styled(motion.div)`
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  right: 32px;
-  font-size: 45px;
-  color: #ffffff76;
+  right: 10px;
+  font-size: 60px;
+  color: rgb(150, 150, 150);
   z-index: 1;
   cursor: pointer;
 `;
@@ -60,20 +53,36 @@ export const LeftArrowStyles = styled(motion.div)`
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  left: 32px;
-  font-size: 45px;
-  color: #ffffff76;
+  left: 10px;
+  font-size: 60px;
+  color: rgb(150, 150, 150);
   z-index: 1;
   cursor: pointer;
 `;
 
 export const ProyectsName = styled(motion.h1)`
-  margin: 0 auto 0 auto;
+  margin: 0 auto 0 5%;
   margin-top: 0.5rem;
   font-weight: bold;
+  font-size: 30px;
 `;
 
 export const ProyDescrip = styled(motion.h1)`
-  margin: 0.5rem auto 0.5rem auto;
+  margin: 0.5rem auto 0.5rem 5%;
   border: 0;
+`;
+
+export const SeeButton = styled(motion.button)`
+  display: flex;
+  background-color: rgb(0, 145, 142);
+  border: 0;
+  margin: 10px auto 10px auto;
+  padding: 5px;
+  border-radius: 15px;
+  transition: 1s;
+  :hover{
+    background-color: rgb(0, 160, 155);
+    scale: 1.1;
+    box-shadow: rgba(0, 160, 155, 0.5) 0px 3px 8px;
+  }
 `;
