@@ -33,7 +33,7 @@ export default function About() {
       <motion.h3
       initial={{x: 10, opacity: 0}}
       animate={{x: 0, opacity: 1}}
-      transition={{delay: 0.2 , transition:{duration:2}}}>I`&apos;`m Santiago Aguero, a Full-Stack Developer located in Buenos Aires managing a serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</motion.h3>
+      transition={{delay: 0.2 , transition:{duration:2}}}>I&apos;m Santiago Aguero, a Full-Stack Developer located in Buenos Aires managing a serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</motion.h3>
       <motion.h3
       initial={{x: 10, opacity: 0}}
       animate={{x: 0, opacity: 1}}
