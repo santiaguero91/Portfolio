@@ -41,16 +41,6 @@ export default function Contact() {
     );
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setInput({
-      name: "",
-      phone: "",
-      email: "",
-      text: "",
-    });
-    alert("mail was created successfully!!");
-  };
 
 
   const form = useRef();
@@ -83,7 +73,7 @@ export default function Contact() {
 
   return (
     <Container>
-      <WorkTogether>¡I'm eager to work together!</WorkTogether>
+      <WorkTogether>¡I&apos;m eager to work together!</WorkTogether>
       <FormPlaque>
 
 
