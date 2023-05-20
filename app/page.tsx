@@ -8,10 +8,10 @@ import {
 } from "react-icons/ai";
 import Link from "next/link";
 import About from "./About/page";
-import { Divider, FullStack, Hi } from "./pageStyle";
+import { Divider, FullStack, Hi, ContactDiv } from "./pageStyle";
 import { motion } from "framer-motion";
+import Contact from "./Contact/page";
 
-/* AiOutlineInstagram */
 export default function Home() {
   return (
     <div className="flex items-center flex-col">
@@ -56,21 +56,24 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 , transition: { duration: 0.8, delay: 2.5 }}}
           exit={{ opacity: 0, transition: { duration: 0.2 } }}>
-          <Link href="https://www.youtube.com/@SantiPrograma-mi7qd">
-            <AiOutlineYoutube className="h-12 w-12 cursor-pointer transition duration-300 ease-out hover:text-gray-500" />
-          </Link> </motion.div>
+                <div><a href="Santiago Agüero  Full Stack Developer.pdf" download="Santi Aguero Full Stack Developer.pdf">Download My CV</a></div>
+ </motion.div>
         </div>
       </div>
       <Divider />
       <motion.div
-     initial={{ opacity: 0 , y: 150}} 
+     initial={{ opacity: 0 , y: 50}} 
      whileInView={{ opacity: 1 , y: 0, 
      transition:{duration:1}}}  >
         <About />
+        </motion.div>
         <Divider />
-
-        <button></button>
-      </motion.div>
+        <ContactDiv
+     initial={{ opacity: 0 , y: 150}} 
+     whileInView={{ opacity: 1 , y: 0, 
+     transition:{duration:1}}}  >
+        <Contact />
+      </ContactDiv>
     </div>
   );
 }

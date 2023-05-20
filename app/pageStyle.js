@@ -18,3 +18,7 @@ export const Hi = styled(motion.h2)`
 
 export const FullStack = styled(motion.h3)`
 `;
+
+export const ContactDiv = styled(motion.div)`
+width: 100%;
+`;

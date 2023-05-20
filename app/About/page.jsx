@@ -6,7 +6,15 @@ import profilePic from '../img/foto.jpg';
 import {Hi, Container, ContactMe} from "./pageStyle"
 import { motion } from "framer-motion";
 
+
+
+
+
 export default function About() {
+
+
+
+
   return (
 
 <Container>
@@ -39,7 +47,6 @@ export default function About() {
       animate={{y: 0, opacity: 1}}
       transition={{delay: 1.8 , transition:{duration:2}}}> Contact Me</ContactMe>
     </Hi>
-
     </Container>
   )
 

@@ -1,9 +1,22 @@
+"use client";
+
 import cardigan from "../img/cardigan.png";
 import countries from "../img/countries.png";
 import Image from "next/image";
-import Link from "next/link"
+import Link from "next/link";
 import cardiganhome from "../img/CardiganHome.png";
-import {Container, CardDiv} from "./CardsStyle";
+import HChome from "../img/HCountriesHome.png";
+import {
+  Container,
+  CardDiv,
+  ProyectsName,
+  ProyDescrip,
+  CardStats,
+  RightArrowStyles,
+  LeftArrowStyles,
+  ImageContainer,
+} from "./CardsStyle";
+import { useState } from "react";
 const paginas = [
   {
     id: 1,
@@ -14,40 +27,58 @@ const paginas = [
     photo2: cardiganhome,
     photo3: cardiganhome,
 
-    description: "Ecommerce for training gear and products for gyms and/or homes."
+    description:
+      "Ecommerce for training gear and products for gyms and/or homes.",
   },
-  { 
-    id: 1,
+  {
+    id: 2,
     name: "Henry-Countries",
     link: "https://www.youtube.com/watch?v=biCLAKvbA3s",
     logo: countries,
-    photo: cardiganhome,
+    photo: HChome,
     photo2: cardiganhome,
     photo3: cardiganhome,
-    description: "Webpage used to  search countries and their activities."
+    description: "Webpage used to  search countries and their activities.",
   },
 ];
 
 function Cards() {
-  return (
+  const [ordenamiento, setOrdenamiento] = useState(0);
 
+  return (
     <Container>
       {paginas.map((pagina) => (
         <Link href={pagina.link}>
-        <CardDiv>
-          <div className="mx-auto">
-          <Image src={pagina.photo} alt="foto" className="mx-auto rounded-lg " />
-          <div className="flex flex-col">
-          <h1 className="mt-5 font-bold " >{pagina.name}</h1>
-          <h1 className="mt-5">{pagina.description}</h1>
-          </div>
-          </div>
-        </CardDiv>
+          <CardDiv
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+          >
+            <CardStats>
+              <div className="w-1/12 absolute rounded-full">
+                <Image
+                  src={pagina.logo}
+                  alt="logo"
+                  className="w-1/2 absolute rounded-full"
+                />
+              </div>
+              <ProyectsName>{pagina.name}</ProyectsName>
+              <ProyDescrip>{pagina.description}</ProyDescrip>
+              <ImageContainer>
+                <LeftArrowStyles> ❰ </LeftArrowStyles>
+                <Image
+                  src={pagina.photo}
+                  alt="foto"
+                  className="mx-auto rounded-lg "
+                />
+                <RightArrowStyles> ❱ </RightArrowStyles>
+              </ImageContainer>
+
+              <div className="flex flex-col"></div>
+            </CardStats>
+          </CardDiv>
         </Link>
-
       ))}
-      </Container>
-
+    </Container>
   );
 }
 export default Cards;

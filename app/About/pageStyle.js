@@ -6,7 +6,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
 display: flex;
 flex-direction: row;
-width: 75%;
+width: 100%;
 height: fit-content;
 margin: 5% auto;
 
@@ -19,7 +19,7 @@ margin: auto;
 }
 `;
 
-export const Hi = styled.div`
+export const Hi = styled(motion.div)`
   display: flex;
 flex-direction: column;
 margin-top: 10px;
