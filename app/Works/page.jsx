@@ -1,17 +1,11 @@
 import React from 'react'
-import axios from 'axios'
 import Cards from "../Components/Users"
 import {Container, ThisAre} from "./pageStyle"
 
-const fetchUsers = async () => {
-  const response = await axios.get("https://reqres.in/api/users");
-  return response.data.data
-}
 
-
-export default async function Works() {
-  const users = await fetchUsers()
+export default function Works() {
   return (
+    <div>
     <Container>
       <ThisAre
       initial={{ opacity: 0 , y: 50}} 
@@ -20,6 +14,7 @@ export default async function Works() {
       >This are my Proyects so far ...</ThisAre>
       <Cards />
     </Container>
+    </div>
   )
 
 }

@@ -8,6 +8,7 @@ import {
 } from "react-icons/ai";
 import Link from "next/link";
 import About from "./About/page";
+import Works from "./Works/page";
 import { Divider, FullStack, Hi, ContactDiv, PdfDiv } from "./pageStyle";
 import { motion } from "framer-motion";
 import Contact from "./Contact/page";
@@ -83,7 +84,15 @@ export default function Home() {
       >
         <About />
       </motion.div>
+      
       <Divider />
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+      ><Works/>
+
+</motion.div>
+<Divider />
       <ContactDiv
         initial={{ opacity: 0, y: 150 }}
         whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
