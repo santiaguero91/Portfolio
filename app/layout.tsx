@@ -1,9 +1,7 @@
 import "./globals.css";
-import { Lora } from "next/font/google";
 import Navigation from "./Components/Navigation";
 import StyledComponentsRegistry from "../registry";
 
-const inter = Lora({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Santiago Portfolio",
@@ -17,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <StyledComponentsRegistry>
           <Navigation />
         </StyledComponentsRegistry>

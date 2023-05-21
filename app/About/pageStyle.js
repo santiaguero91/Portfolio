@@ -6,10 +6,9 @@ import styled from 'styled-components';
 export const Container = styled.div`
 display: flex;
 flex-direction: row;
-width: 100%;
+width: fit-content;
 height: fit-content;
-margin: 5% auto;
-
+margin: 5% 5%;
 .margen{
   margin: auto;
 }
@@ -25,7 +24,7 @@ flex-direction: column;
 margin-top: 10px;
 margin-left: 4rem;
 font-size: 1.5rem;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 h3{
   margin-top: 0.75rem;
 margin-bottom: 0.75rem;

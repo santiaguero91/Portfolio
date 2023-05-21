@@ -8,6 +8,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   margin: 2rem auto;  
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 `;
 
 export const WorkTogether = styled.h4`

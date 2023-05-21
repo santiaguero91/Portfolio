@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 export default function Navigation() {
   const pathname = usePathname();
   return (
-    <div className="container flex flex-wrap items-center justify-end mx-auto">
+    <div className="container flex flex-wrap items-center justify-end mx-auto font-serif">
       
       {pathname !== "/" &&
     <ul className="flex flex-col items-end pt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-bold ">

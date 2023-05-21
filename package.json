@@ -30,5 +30,8 @@
     "styled-components": "^5.3.10",
     "tailwindcss": "^3.3.2",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^2.1.3"
   }
 }
