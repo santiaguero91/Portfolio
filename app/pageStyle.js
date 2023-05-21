@@ -3,44 +3,21 @@ import { motion } from "framer-motion";
 
 import styled from 'styled-components';
 
-export const Divider = styled(motion.div)`
-margin: 10rem 0 5rem;
-background-color: rgb(98,98,98);
-width: 100%;
-height:  5rem;
-border: none;
-box-shadow: rgba(250, 250, 193, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-`;
 
-
-export const Hi = styled(motion.h2)`
-`;
-
-export const FullStack = styled(motion.h3)`
-`;
-
-export const ContactDiv = styled(motion.div)`
-width: 100%;
-`;
-
-export const PdfDiv = styled(motion.div)`
-background-color: gray;
-padding: 5px;
-border: 0;
-border-radius: 15px;
-box-shadow: rgba(250, 250, 193, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+export const EnglishPortfolio = styled(motion.div)`
+  background-color: rgb(45, 55, 72);
+width: 200px;
+height: 200px;
+margin: 30% auto;
 display: flex;
-font-size: 35px;
 align-items: center;
 justify-content: center;
+border: 0;
+border-radius: 20px;
+box-shadow: rgba(100, 100, 100, 0.5) 0px 3px 8px;
 transition: 1s;
 :hover{
-    background-color: rgb(0, 151, 167);
-    box-shadow: rgba(0, 151, 167, 0.7) 0px 50px 100px -20px, rgba(0, 151, 167, 0.7) 0px 30px 60px -30px;
-
-}
-h3{
-    font-size: 20px;
+    box-shadow: 0 1px 100px 2px rgba(100, 100, 100, 0.5);
 
 }
 `;
