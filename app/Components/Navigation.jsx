@@ -8,7 +8,7 @@ export default function Navigation() {
   const pathname = usePathname();
   return (
     <div className="container flex flex-wrap items-center justify-end mx-auto font-serif">
-      {pathname !== "/" && (
+      {(pathname === "/Homes"  || pathname === "/About" || pathname === "/Works" || pathname === "/About") ? (
         <ul className="flex flex-col items-end pt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-bold ">
           <ItemLista
             initial={{ y: -100 }}
@@ -46,7 +46,7 @@ export default function Navigation() {
             <Link href="/Contact">Contact</Link>
           </ItemLista>
         </ul>
-      )}
+      ) : ""}
     </div>
   );
 }
