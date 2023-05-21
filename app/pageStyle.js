@@ -4,6 +4,17 @@ import { motion } from "framer-motion";
 import styled from 'styled-components';
 
 
+
+export const Maindiv = styled(motion.div)`
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 10%;
+justify-content: center;
+margin: 10% auto;
+
+`;
+
 export const EnglishPortfolio = styled(motion.div)`
   background-color: rgb(45, 55, 72);
 width: 200px;
