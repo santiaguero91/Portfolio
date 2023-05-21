@@ -2,16 +2,16 @@
 
 import React from "react";
 import Link from "next/link";
-import { EnglishPortfolio, Maindiv } from "./pageStyle";
+import { Portfolio, Maindiv } from "./pageStyle";
 
 export default function Home() {
   return (
     <Maindiv>
       <Link href="/Homes">
-        <EnglishPortfolio>English</EnglishPortfolio>
+        <Portfolio>English</Portfolio>
       </Link>
       <Link href="/">
-         <EnglishPortfolio>Español (building)</EnglishPortfolio> 
+         <Portfolio><p>Español</p> (building)</Portfolio> 
       </Link>
     </Maindiv>
   );
