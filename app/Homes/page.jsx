@@ -67,7 +67,7 @@ export default function Homes() {
           >
             <a
               href="Santiago Agüero  Full Stack Developer.pdf"
-              download="Santi Aguero Full Stack Developer.pdf"
+              download="Santiago Agüero  Full Stack Developer.pdf"
             >
               <PdfDiv>
                 <h3>Download My CV</h3>

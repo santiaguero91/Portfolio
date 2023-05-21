@@ -66,8 +66,8 @@ export default function Homes() {
             exit={{ opacity: 0, transition: { duration: 0.2 } }}
           >
             <a
-              href="Santiago Agüero  Full Stack Developer.pdf"
-              download="Santi Aguero Full Stack Developer.pdf"
+              href="Santiago Agüero - Full Stack Developer.pdf"
+              download="Santiago Agüero - Full Stack Developer.pdf"
             >
               <PdfDiv>
                 <h3>Descarga mi CV</h3>
