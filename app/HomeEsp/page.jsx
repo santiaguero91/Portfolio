@@ -7,9 +7,9 @@ import {
   AiOutlineGithub,
 } from "react-icons/ai";
 import Link from "next/link";
-import About from "../About/page";
-import Works from "../Works/page";
-import Contact from "../Contact/page";
+import About from "../AboutEsp/page";
+import Works from "../WorksEsp/page";
+import Contact from "../ContactEsp/page";
 import { Divider, FullStack, Hi, ContactDiv, PdfDiv } from "./pageStyle";
 import { motion } from "framer-motion";
 

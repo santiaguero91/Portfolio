@@ -10,8 +10,8 @@ export default function Home() {
       <Link href="/Homes">
         <Portfolio>English</Portfolio>
       </Link>
-      <Link href="/">
-         <Portfolio><p>Español</p> (building)</Portfolio> 
+      <Link href="/HomeEsp">
+         <Portfolio><p>Español</p></Portfolio> 
       </Link>
     </Maindiv>
   );
