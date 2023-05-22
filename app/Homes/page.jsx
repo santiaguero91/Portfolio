@@ -10,22 +10,12 @@ import Link from "next/link";
 import About from "../About/page";
 import Works from "../Works/page";
 import Contact from "../Contact/page";
-import ParticlesBackground from "./particlesBackground";
-
-import {
-  Divider,
-  FullStack,
-  Hi,
-  ContactDiv,
-  PdfDiv,
-  DivParticles,
-} from "./pageStyle";
+import { Divider, FullStack, Hi, ContactDiv, PdfDiv } from "./pageStyle";
 import { motion } from "framer-motion";
 
 export default function Homes() {
   return (
     <div className="flex items-center flex-col">
-
       <div className="mt-10 mb-10 ml-7 mr-64 bg-transparent text-7xl font-serif	">
         <Hi
           className="text-cyan-600 font-semibold"
@@ -118,8 +108,6 @@ export default function Homes() {
       >
         <Contact />
       </ContactDiv>
-
     </div>
-
   );
 }

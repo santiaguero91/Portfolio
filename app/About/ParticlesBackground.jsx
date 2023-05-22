@@ -4,7 +4,7 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import particlesConfig from "./particles-config"
-import { DivParticles } from "./pageStyle";
+import { DivParticles } from "../About/pageStyle";
 
 export default function ParticlesBackground() {
     const particlesInit = useCallback( engine => {
@@ -12,7 +12,8 @@ export default function ParticlesBackground() {
     }, []);
 
     return (
-        <DivParticles>
+        <DivParticles
+        >
         <div id='particle-background'
         height= "100px"
         width= "100px"
