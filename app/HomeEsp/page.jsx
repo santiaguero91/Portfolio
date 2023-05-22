@@ -77,22 +77,31 @@ export default function Homes() {
           </motion.div>
         </div>
       </div>
-      <Divider />
+      <Divider
+        initial={{ width: 0 }}
+        whileInView={{ width: "100%", transition: { duration: 0.8 } }}
+      />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
       >
         <About />
       </motion.div>
-      
-      <Divider />
+
+      <Divider
+        initial={{ width: 0 }}
+        whileInView={{ width: "100%", transition: { duration: 0.8 } }}
+      />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
-      ><Works/>
-
-</motion.div>
-<Divider />
+      >
+        <Works />
+      </motion.div>
+      <Divider
+        initial={{ width: 0 }}
+        whileInView={{ width: "100%", transition: { duration: 0.8 } }}
+      />
       <ContactDiv
         initial={{ opacity: 0, y: 150 }}
         whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}

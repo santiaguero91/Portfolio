@@ -9,6 +9,7 @@ export const Container = styled.div`
   align-items: center;
   margin: 2rem auto;  
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  z-index: 99;
 `;
 
 export const WorkTogether = styled.h4`

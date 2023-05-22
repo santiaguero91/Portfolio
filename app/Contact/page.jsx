@@ -73,7 +73,7 @@ export default function Contact() {
 
   return (
     <Container>
-      <WorkTogether>¡I&apos;m eager to work together!</WorkTogether>
+      <WorkTogether>I&apos;m eager to work together!</WorkTogether>
       <FormPlaque>
 
 

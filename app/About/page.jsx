@@ -3,8 +3,9 @@
 import React from 'react'
 import Image from 'next/image';
 import profilePic from '../img/foto.jpg';
-import {Hi, Container, ContactMe} from "./pageStyle"
+import {Hi, Container, ContactMe, DivParticles} from "./pageStyle"
 import { motion } from "framer-motion";
+import ParticlesBackground from '../Homes/particlesBackground';
 
 
 
@@ -18,6 +19,12 @@ export default function About() {
   return (
 
 <Container>
+<DivParticles>
+<ParticlesBackground 
+        />
+        </DivParticles>
+
+
       <motion.div className='margen'
       initial={{y: 50, opacity: 0}}
       animate={{y: 0, opacity: 1}}

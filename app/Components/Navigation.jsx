@@ -15,8 +15,7 @@ export default function Navigation() {
           <ul className="flex flex-col items-end pt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-bold ">
             <ItemLista
               initial={{ y: -100 }}
-              animate={{ y: 0 }}
-              transition={{ delay: 0.8, transition: { duration: 2 } }}
+              animate={{ y: 0, delay: 0.8,  duration: 2  }}
             >
               <Link href="/">Lang</Link>
             </ItemLista>
