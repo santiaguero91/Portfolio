@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
 display: flex;
 flex-direction: row;
 width: fit-content;
@@ -51,4 +51,6 @@ transition:  0.2s ease-in-out;
 `;
 export const DivParticles = styled(motion.div)`
   z-index: -2;
+  position: absolute;
+  margin-top: 0;
 `;

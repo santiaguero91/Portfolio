@@ -1,6 +1,9 @@
+"use client";
+
 import "./globals.css";
 import Navigation from "./Components/Navigation";
 import StyledComponentsRegistry from "../registry";
+import { AnimatePresence } from "framer-motion";
 
 
 export const metadata = {
@@ -19,7 +22,10 @@ export default function RootLayout({
         <StyledComponentsRegistry>
           <Navigation />
         </StyledComponentsRegistry>
+      <AnimatePresence mode="wait">
         {children}
+        </AnimatePresence>
+
       </body>
     </html>
   );

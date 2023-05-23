@@ -16,6 +16,8 @@ export default function Navigation() {
             <ItemLista
               initial={{ y: -100 }}
               animate={{ y: 0, delay: 0.8,  duration: 2  }}
+              transition={{ delay: 1.2, transition: { duration: 2 } }}
+
             >
               <Link href="/">Lang</Link>
             </ItemLista>

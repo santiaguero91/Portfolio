@@ -15,7 +15,11 @@ import { motion } from "framer-motion";
 
 export default function Homes() {
   return (
-    <div className="flex items-center flex-col">
+    <div className="flex items-center flex-col"
+    initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.2 } }}
+    >
       <div className="mt-10 mb-10 ml-7 mr-64 bg-transparent text-7xl font-serif	">
         <Hi
           className="text-cyan-600 font-semibold"

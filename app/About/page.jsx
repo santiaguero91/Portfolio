@@ -9,7 +9,10 @@ import ParticlesBackground from "./ParticlesBackground";
 
 export default function About() {
   return (
-    <Container>
+    <Container
+    exit={{scaleY: 0, transition: { duration: 2 } }}
+    
+    >
       <DivParticles>
         <ParticlesBackground />
       </DivParticles>

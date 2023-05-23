@@ -29,10 +29,14 @@ border-radius: 20px;
 box-shadow: rgba(100, 100, 100, 0.5) 0px 3px 8px;
 transition: 1s;
 font-size: 24px;
-font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+font-weight: 700;
 
+font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+transition: 1s;
 :hover{
     box-shadow: 0 1px 100px 2px rgba(100, 100, 100, 0.5);
-
+    background-color: rgb(180, 180, 180);
+    color: rgb(45, 55, 72);
+    font-weight: 700;
 }
 `;
