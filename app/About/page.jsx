@@ -40,7 +40,7 @@ export default function About() {
           transition={{ delay: 0.2, transition: { duration: 2 } }}
         >
           I&apos;m Santiago Aguero, a Full-Stack Developer located in Buenos
-          Aires managing a serious passion for UI effects, animations and
+          Aires with great passion for UI effects, animations and
           creating intuitive, dynamic user experiences.
         </motion.h3>
         <motion.h3
@@ -48,7 +48,7 @@ export default function About() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.8, transition: { duration: 2 } }}
         >
-          I&apos;m a well-organised person, problem solver, independent employee with
+          I&apos;m a well-organised person, problem solver, an employee with
           attention to detail and also a teamplayer with high communication
           skills and leadership.
         </motion.h3>

@@ -1,4 +1,3 @@
-"use client";
 
 import "./globals.css";
 import Navigation from "./Components/Navigation";
@@ -22,9 +21,7 @@ export default function RootLayout({
         <StyledComponentsRegistry>
           <Navigation />
         </StyledComponentsRegistry>
-      <AnimatePresence mode="wait">
         {children}
-        </AnimatePresence>
 
       </body>
     </html>
