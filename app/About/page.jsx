@@ -6,6 +6,7 @@ import profilePic from "../img/foto.jpg";
 import { Hi, Container, ContactMe, DivParticles } from "./pageStyle";
 import { motion } from "framer-motion";
 import ParticlesBackground from "./ParticlesBackground";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -21,7 +22,7 @@ export default function About() {
         className="margen"
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ transition: { duration: 2 } }}
+        transition={{ duration: 2 }}
       >
         <Image
           src={profilePic}
@@ -47,8 +48,8 @@ export default function About() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.8, transition: { duration: 2 } }}
         >
-          Well-organised person, problem solver, independent employee with
-          attention to detail but also a teamplayer with high communication
+          I&apos;m a well-organised person, problem solver, independent employee with
+          attention to detail and also a teamplayer with high communication
           skills and leadership.
         </motion.h3>
         <motion.h3
@@ -57,15 +58,14 @@ export default function About() {
           transition={{ delay: 1.4, transition: { duration: 2 } }}
         >
           Interested in the entire programming spectrum and working on ambitious
-          projects with positive people.
+          projects with a positive attitude.
         </motion.h3>
         <ContactMe
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 1.8, transition: { duration: 2 } }}
         >
-          {" "}
-          Contact Me
+          <Link href="/Contact">Contacta me</Link>
         </ContactMe>
       </Hi>
     </Container>

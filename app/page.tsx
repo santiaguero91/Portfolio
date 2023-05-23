@@ -6,7 +6,10 @@ import { Portfolio, Maindiv } from "./pageStyle";
 
 export default function Home() {
   return (
-    <Maindiv>
+    <Maindiv
+    initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ transition: { duration: 2 } }}>
       <Link href="/Homes">
         <Portfolio>English</Portfolio>
       </Link>

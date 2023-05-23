@@ -23,10 +23,10 @@ export const Hi = styled(motion.div)`
 flex-direction: column;
 margin-top: 10px;
 margin-left: 4rem;
-font-size: 1.5rem;
+font-size: 1.2rem;
 font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 h3{
-  margin-top: 0.75rem;
+margin-top: 0.75rem;
 margin-bottom: 0.75rem;
 }
 `;
@@ -47,6 +47,7 @@ transition:  0.2s ease-in-out;
 
 :hover{
   background-color: white;
+  color: #0d2f3c;
 }
 `;
 export const DivParticles = styled(motion.div)`

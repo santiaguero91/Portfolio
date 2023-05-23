@@ -13,6 +13,11 @@ export default function Works() {
       transition:{duration:1}}}
       >This are my Proyects so far ...</ThisAre>
       <Cards />
+      <ThisAre
+      initial={{ opacity: 0 , y: 50}} 
+      whileInView={{ opacity: 1 , y: 0, 
+      transition:{duration:1}}}
+      >Many more to come ...</ThisAre>
     </Container>
     </div>
   )

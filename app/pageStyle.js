@@ -32,7 +32,7 @@ font-size: 24px;
 font-weight: 700;
 
 font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-transition: 1s;
+transition:  0.5s ease-in-out;
 :hover{
     box-shadow: 0 1px 100px 2px rgba(100, 100, 100, 0.5);
     background-color: rgb(180, 180, 180);

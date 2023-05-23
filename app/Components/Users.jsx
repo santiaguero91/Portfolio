@@ -23,7 +23,7 @@ const paginas = [
     logo: cardigan,
     photos: [cardiganhome,Cdetail,CCart,Clandin],
     description:
-      "Ecommerce for training gear and products for gyms and/or homes.",
+      "An Ecommerce for training gear and products for gyms and/or homes.",
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const paginas = [
     link: "https://pi-countries-santiaguero91.vercel.app/home",
     logo: countries,
     photos: [HChome,HCdetail, HCform,HClandin],
-    description: "Webpage used to  search countries and their activities.",
+    description: "A Webpage used to  search for countries and their tourist activities.",
   },
 ];
 
