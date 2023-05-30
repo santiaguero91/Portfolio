@@ -1,13 +1,7 @@
 "use client";
-
-import cardigan from "../img/cardigan.png";
-import countries from "../img/countries.png";
 import Image from "next/image";
 import Link from "next/link";
-import cardiganhome from "../img/CardiganHome.png";
-import HChome from "../img/HCountriesHome.png";
 import {
-  Container,
   CardDiv,
   ProyectsName,
   ProyDescrip,
@@ -18,9 +12,11 @@ import {
   SeeButton,
 } from "./CardsStyle";
 import { useState } from "react";
+import { useAppSelector} from "../../Redux/hooks"
 
 function Card( {name, link, logo, photos, description}) {
   const [num, setNum] = useState(0);
+  const count = useAppSelector(state=>state.counterReducer.counter)
 
   function sumNum() {
     num > 2 ? "" : setNum(num+1)
@@ -62,7 +58,8 @@ function Card( {name, link, logo, photos, description}) {
         <div className="flex flex-col"></div>
       </CardStats>
       <Link href={link}>
-        <SeeButton>See the proyect</SeeButton>
+      {count === 1 ?<SeeButton>See the proyect</SeeButton>
+ :<SeeButton>Ver el Proyecto</SeeButton>}
       </Link>
     </CardDiv>
   );

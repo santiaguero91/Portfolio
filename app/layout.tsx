@@ -2,8 +2,7 @@
 import "./globals.css";
 import Navigation from "./Components/Navigation";
 import StyledComponentsRegistry from "../registry";
-import { AnimatePresence } from "framer-motion";
-
+import { Providers } from "@/Redux/provider";
 
 export const metadata = {
   title: "Santiago Portfolio",
@@ -18,11 +17,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Providers>
         <StyledComponentsRegistry>
           <Navigation />
         </StyledComponentsRegistry>
         {children}
-
+        </Providers>
       </body>
     </html>
   );
