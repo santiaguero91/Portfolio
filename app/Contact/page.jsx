@@ -10,10 +10,15 @@ import {
 } from "./pageStyle";
 import validate from "./FormValidation";
 import emailjs from "@emailjs/browser";
-import { useAppSelector } from "../../Redux/hooks";
+import { useAppDispatch, useAppSelector } from "../../Redux/hooks";
+import PopUp from "../Components/PopUp";
+import { exitPopUp, makePopUp } from "@/Redux/features/counter.slice";
+
 
 export default function Contact() {
   const count = useAppSelector((state) => state.counterReducer.counter);
+  const popupState = useAppSelector((state) => state.counterReducer.popup);
+  const dispatch= useAppDispatch()
 
   const [input, setInput] = useState({
     name: "",
@@ -46,7 +51,6 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_v64g5dl",
@@ -70,10 +74,15 @@ export default function Contact() {
           console.log(error.text);
         }
       );
+      dispatch(makePopUp())
+      setTimeout(() => {
+        dispatch(exitPopUp())
+      }, 10000);
   };
 
   return (
     <div>
+      {popupState=== 1 &&<PopUp/>}
       {count === 1 ? (
         <Container>
           <WorkTogether>I&apos;m eager to work together!</WorkTogether>
@@ -135,6 +144,7 @@ export default function Contact() {
                   id="submitButton"
                   onClick={(e) => sendEmail(e)}
                   type="submit"
+
                 >
                   Send To Email
                 </SendButton>

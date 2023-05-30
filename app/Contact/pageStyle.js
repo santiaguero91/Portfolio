@@ -7,9 +7,10 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem auto;  
+  margin: 0 auto;  
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  z-index: 99;
+  z-index: 1;
+  scale:0.9;
 `;
 
 export const WorkTogether = styled.h4`

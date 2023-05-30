@@ -17,6 +17,7 @@ color: #a0a0a0;
     left: 0;
     bottom: -10px;
     transition: 0.3s;
+
 }
 :hover{
     color:#ffffff
@@ -33,6 +34,10 @@ margin: 10px auto 0 20px;
 align-items: center;
 justify-content: center;
 color: #a0a0a0;
+scale: 0.8;
+h1{
+  font-size: 20px;
+}
 .switch {
   position: relative;
   display: inline-block;
