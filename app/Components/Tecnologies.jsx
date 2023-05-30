@@ -18,7 +18,7 @@ export function Technologies() {
           {technologyList.map((el) => {
             return (
 
-              <Ball src={el.icon}/>
+              <Ball src={el.icon} key={el.name}/>
 
             );
           })}
