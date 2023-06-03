@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import profilePic from "../img/foto.jpg";
-import { Hi, Container, DivParticles } from "./pageStyle";
+import { Hi, Container, DivParticles, ImageDiv, BorderRadiosDiv } from "./pageStyle";
 import { motion } from "framer-motion";
 import ParticlesBackground from "./ParticlesBackground";
 import { Technologies } from "../Components/Tecnologies";
@@ -18,13 +18,22 @@ export default function About() {
           <DivParticles>
             <ParticlesBackground />
           </DivParticles>
-
+          <div>
           <motion.div
             className="margen"
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 2 }}
           >
+            <BorderRadiosDiv
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01]
+            }}
+            />
             <Image
               src={profilePic}
               alt="FOTO"
@@ -32,7 +41,9 @@ export default function About() {
               height={500}
               className="photo"
             />
+          
           </motion.div>
+          </div>
           <Hi>
             <motion.h3
               initial={{ x: 10, opacity: 0 }}

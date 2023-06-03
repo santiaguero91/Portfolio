@@ -18,11 +18,11 @@ initial={{ y: -100 }}
 animate={{ y: 0, delay: 0.8,  duration: 1}}
 >
 <h1>Eng</h1>
-<label class="switch">
+<label className="switch">
   <input type="checkbox" onClick={()=>{
 dispatch(increment())
   }}/>
-  <span class="slider round"></span>
+  <span className="slider round"></span>
 </label>
 <h1>Esp</h1>
 </DivLang> 
