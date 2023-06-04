@@ -26,11 +26,9 @@ export const CardDiv = styled(motion.div)`
 
 export const ImageContainer = styled(motion.div)`
 position: relative;
-width: fit-content;
-height: fit-content;
-  display: flex;
-  flex-direction: row;
-  scale:0.95;
+width: 100%;
+height: 100%;
+margin: 4rem 0 0 0;
 `;
 
 export const CardStats = styled(motion.div)`

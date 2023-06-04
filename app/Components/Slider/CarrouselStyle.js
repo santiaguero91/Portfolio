@@ -4,27 +4,15 @@ import styled from "styled-components";
 
 export const Container = styled(motion.div)`
 
-.container {
-  max-width: 124rem;
-  padding: 4rem 1rem;
-  margin: 0 auto;
-}
-
-.heading {
-  padding: 1rem 0;
-  font-size: 3.5rem;
-  text-align: center;
-}
-
 .swiper_container {
-  height: 52rem;
+  height: fit-content;
   padding: 2rem 0;
   position: relative;
 }
 
 .swiper-slide {
-  width: 37rem;
-  height: 42rem;
+  width: fit-content;
+  height: fit-content;
   position: relative;
 }
 
@@ -113,11 +101,14 @@ export const Container = styled(motion.div)`
 .slider-controler .slider-arrow::after {
   content: '';
 }
-
 .swiper-pagination {
   position: relative;
-  width: 15rem !important;
-  bottom: 1rem;
+  top: 50%;
+  font-size: 60px;
+  color: rgb(150, 150, 150);
+  z-index: 1;
+  cursor: pointer;
+  width: 55rem !important;
 }
 
 .swiper-pagination .swiper-pagination-bullet {

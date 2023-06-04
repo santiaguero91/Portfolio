@@ -7,6 +7,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import { EffectCoverflow, Pagination, Navigation } from "swiper";
+
+
 import HChome from "../../img/HCountriesHome.png";
 import HClandin from "../../img/HCLanding.png";
 import HCdetail from "../../img/HCDetails.png";
