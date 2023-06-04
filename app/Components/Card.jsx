@@ -47,6 +47,7 @@ function Card({ name, link, logo, photos, description }) {
         </div>
         <ProyectsName>{name}</ProyectsName>
         <ProyDescrip>{description}</ProyDescrip>
+        </CardStats>
 
         <ImageContainer>
           <Container>
@@ -148,7 +149,6 @@ function Card({ name, link, logo, photos, description }) {
         </ImageContainer>
 
         <div className="flex flex-col"></div>
-      </CardStats>
       <Link href={link}>
         {count === 1 ? (
           <SeeButton>See the proyect</SeeButton>

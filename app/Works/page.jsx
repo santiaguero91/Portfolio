@@ -38,9 +38,7 @@ export default function Works() {
 
       
     </Container>}
-
-{/*     <Carrousel/>
- */}    </div>
+    </div>
   )
 
 }

@@ -102,8 +102,7 @@ export const Container = styled(motion.div)`
   content: '';
 }
 .swiper-pagination {
-  position: relative;
-  top: 50%;
+  position: absolute;
   font-size: 60px;
   color: rgb(150, 150, 150);
   z-index: 1;

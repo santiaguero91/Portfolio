@@ -3,37 +3,39 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const Container = styled(motion.div)`
-  width: 100%;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   place-content: center;
-  padding: 2.5rem;
+  padding: 1.5rem;
 `;
 
 export const CardDiv = styled(motion.div)`
-  margin: 2.5rem;
+  width: 90vw;
   display: block;
-  padding: 1.5rem;
-  background-color: rgb(45, 55, 72);
+  padding: 3.5rem 0;
+  background-color: transparent;
+  margin-bottom: 2rem;
   border: none;
   border-radius: 1rem;
   box-shadow: 0 1px 100px 2px rgba(100, 100, 100, 0.5);
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
-
 `;
 
 export const ImageContainer = styled(motion.div)`
 position: relative;
 width: 100%;
-height: 100%;
-margin: 4rem 0 0 0;
+height: fit-content;
+margin: 1rem 0 0 0;
+scale: 0.8;
 `;
 
 export const CardStats = styled(motion.div)`
   display: flex;
   flex-direction: column;
+  padding: 0 2.5rem;
 `;
 
 
@@ -75,7 +77,7 @@ export const SeeButton = styled(motion.button)`
   display: flex;
   background-color: rgb(0, 145, 142);
   border: 0;
-  margin: 10px auto 10px auto;
+  margin: 0rem auto 0rem auto;
   padding: 5px;
   border-radius: 15px;
   transition: 1s;
