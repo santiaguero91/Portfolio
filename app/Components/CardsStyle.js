@@ -30,6 +30,7 @@ width: fit-content;
 height: fit-content;
   display: flex;
   flex-direction: row;
+  scale:0.95;
 `;
 
 export const CardStats = styled(motion.div)`

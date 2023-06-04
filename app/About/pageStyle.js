@@ -78,7 +78,7 @@ export const BorderRadiosDiv = styled(motion.div)`
 	animation: anim 30s infinite;
 	background: radial-gradient(circle at 0% 0%, rgb(7,4,12), green);
 	border-radius: 30% 70% 53% 47% / 26% 46% 54% 74%;
-	box-shadow: 0 -2vmin 4vmin yellowgreen inset, 0 1vmin 4vmin darkgreen inset,
+	box-shadow: 0 -2vmin 4vmin yellowgreen inset, 0 1vmin 4vmin yellowgreen inset,
 		0 -2vmin 7vmin darkgreen inset;
 	content: "";
 	filter: drop-shadow(0 0 3vmin Thistle) drop-shadow(0 5vmin 4vmin rgb(7,4,12))

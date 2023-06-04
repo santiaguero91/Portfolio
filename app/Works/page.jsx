@@ -3,6 +3,8 @@ import React from 'react'
 import Cards from "../Components/Users"
 import {Container, ThisAre} from "./pageStyle"
 import { useAppSelector} from "../../Redux/hooks"
+import Carrousel from "../Components/Slider/Carrousel"
+import HChome from "../img/HCLanding.png";
 
 
 export default function Works() {
@@ -33,8 +35,12 @@ export default function Works() {
       whileInView={{ opacity: 1 , y: 0, 
       transition:{duration:1}}}
       >Muchos mas por venir ...</ThisAre>
+
+      
     </Container>}
-    </div>
+
+{/*     <Carrousel/>
+ */}    </div>
   )
 
 }
