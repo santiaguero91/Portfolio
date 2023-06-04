@@ -40,6 +40,8 @@ function Card( {name, link, logo, photos, description}) {
         </div>
         <ProyectsName>{name}</ProyectsName>
         <ProyDescrip>{description}</ProyDescrip>
+
+        
         <ImageContainer>
           {
         num >= 1 ? <LeftArrowStyles onClick={(e) => restNum(e)}> ❰ </LeftArrowStyles> : ""
