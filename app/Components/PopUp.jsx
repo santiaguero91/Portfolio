@@ -15,9 +15,9 @@ export default function PopUp() {
         transition: { duration: 0.8, delay: 2 } }}
         exit={{ opacity: 0, transition: { duration: 0.2 } }}
         >
-            {count === 1 ?
-            <PopUpMessage>Gracias por tu mensaje, Me comunicaré contigo lo mas pronto que pueda. </PopUpMessage> :
-            <PopUpMessage>Thank you for your message, I will contact you as soon as possible.</PopUpMessage>}
+            {count === 1 ? 
+            <PopUpMessage>Thank you for your message, I will contact you as soon as possible. </PopUpMessage> :
+            <PopUpMessage>Gracias por tu mensaje, Me comunicaré contigo lo mas pronto que pueda.</PopUpMessage>}
         </PopUpDiv>
     )
 }

@@ -177,7 +177,7 @@ export default function Contact() {
                   placeholder="Nombre"
                 />
               </InputContainer>
-
+{/* 
               <InputContainer>
                 <input
                   id="phone"
@@ -188,7 +188,7 @@ export default function Contact() {
                   title="phone"
                   placeholder="Telefono"
                 />
-              </InputContainer>
+              </InputContainer> */}
 
               <InputContainer>
                 <input
@@ -215,7 +215,6 @@ export default function Contact() {
               </InputContainer>
 
               {input.name !== "" &&
-              input.phone !== "" &&
               input.email !== "" &&
               input.text !== "" ? (
                 <SendButton
