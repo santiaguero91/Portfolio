@@ -13,8 +13,52 @@ margin: 5% 5%;
   margin: auto;
 }
 .photo{
-border-radius: 9999px;
+border: 2px solid white;
 margin: auto;
+animation: anim2 30s ease-in-out infinite;
+transition: 1s;
+}
+@keyframes anim2 {
+	0%,
+	100% {
+		border-radius: 40% 70% 70% 40% / 40% 52% 48% 70%;
+	}
+
+	10% {
+		border-radius: 50% 50% 40% 80% / 35% 80% 40% 75%;
+	}
+
+	20% {
+		border-radius: 67% 33% 47% 53% / 37% 30% 80% 63%;
+	}
+
+	30% {
+		border-radius: 39% 61% 47% 53% / 47% 40% 60% 63%;
+	}
+
+	40% {
+		border-radius: 39% 61% 72% 28% / 74% 50% 60% 36%;
+	}
+
+	50% {
+		border-radius: 100%;
+	}
+
+	60% {
+		border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
+	}
+
+	70% {
+		border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
+	}
+
+	80% {
+		border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
+	}
+
+	90% {
+		border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
+	}
 }
 `;
 
@@ -88,6 +132,8 @@ export const BorderRadiosDiv = styled(motion.div)`
 	width: 50vh;
 }
 
+
+
 @keyframes anim {
 	0%,
 	100% {
@@ -138,4 +184,6 @@ export const BorderRadiosDiv = styled(motion.div)`
 		border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
 	}
 }
+
+
 `;

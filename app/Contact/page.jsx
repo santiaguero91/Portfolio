@@ -53,7 +53,7 @@ export default function Contact() {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_v64g5dl",
+        "service_d6dti4b",
         "template_px93v9a",
         form.current,
         "Ti-An7b8pQPTdvflG"
@@ -100,7 +100,7 @@ export default function Contact() {
                 />
               </InputContainer>
 
-              <InputContainer>
+{/*               <InputContainer>
                 <input
                   id="phone"
                   type="text"
@@ -110,7 +110,7 @@ export default function Contact() {
                   title="phone"
                   placeholder="Phone"
                 />
-              </InputContainer>
+              </InputContainer> */}
 
               <InputContainer>
                 <input
@@ -137,7 +137,6 @@ export default function Contact() {
               </InputContainer>
 
               {input.name !== "" &&
-              input.phone !== "" &&
               input.email !== "" &&
               input.text !== "" ? (
                 <SendButton
