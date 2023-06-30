@@ -3,6 +3,18 @@ import { motion } from "framer-motion";
 
 import styled from "styled-components";
 
+
+export const MainDiv = styled(motion.div)`
+margin-top: 2.5rem;
+margin-bottom: 2.5rem;
+margin-left: 1.75rem;
+margin-right: 16rem;
+background-color: transparent;
+font-size: 5rem;
+font-family: serif;
+`;
+
+
 export const Divider = styled(motion.div)`
   margin: 10rem 0 5rem;
   background-color: rgb(98, 98, 98);

@@ -3,8 +3,6 @@ import React from 'react'
 import Cards from "../Components/Users"
 import {Container, ThisAre} from "./pageStyle"
 import { useAppSelector} from "../../Redux/hooks"
-import Carrousel from "../Components/Slider/Carrousel"
-import HChome from "../img/HCLanding.png";
 
 
 export default function Works() {

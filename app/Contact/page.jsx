@@ -100,18 +100,6 @@ export default function Contact() {
                 />
               </InputContainer>
 
-{/*               <InputContainer>
-                <input
-                  id="phone"
-                  type="text"
-                  value={input.phone}
-                  name="phone"
-                  onChange={(e) => handleChange(e)}
-                  title="phone"
-                  placeholder="Phone"
-                />
-              </InputContainer> */}
-
               <InputContainer>
                 <input
                   id="inputemail"
@@ -177,18 +165,6 @@ export default function Contact() {
                   placeholder="Nombre"
                 />
               </InputContainer>
-{/* 
-              <InputContainer>
-                <input
-                  id="phone"
-                  type="text"
-                  value={input.phone}
-                  name="phone"
-                  onChange={(e) => handleChange(e)}
-                  title="phone"
-                  placeholder="Telefono"
-                />
-              </InputContainer> */}
 
               <InputContainer>
                 <input

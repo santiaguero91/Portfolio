@@ -47,94 +47,89 @@ function Card({ name, link, logo, photos, description }) {
         </div>
         <ProyectsName>{name}</ProyectsName>
         <ProyDescrip>{description}</ProyDescrip>
-        </CardStats>
+      </CardStats>
 
-        <ImageContainer>
-          <Container>
-            
+      <ImageContainer>
+        <Container>
           <div className="slider-controler">
-          <RightArrowStyles className="swiper-button-prev slider-arrow">
-          ❰
-          </RightArrowStyles>
-          <LeftArrowStyles className="swiper-button-next slider-arrow">
-          ❱
-          </LeftArrowStyles>
-        </div>
+            <RightArrowStyles className="swiper-button-prev slider-arrow">
+              ❰
+            </RightArrowStyles>
+            <LeftArrowStyles className="swiper-button-next slider-arrow">
+              ❱
+            </LeftArrowStyles>
+          </div>
 
-            <Swiper
-              effect={"coverflow"}
-              grabCursor={true}
-              centeredSlides={true}
-              loop={true}
-              slidesperview={"auto"}
-              coverfloweffect={{
-                rotate: 0,
-                stretch: 0,
-                depth: 100,
-                modifier: 2.5,
-              }}
-              pagination={{ el: '.swiper-pagination', clickable: true }}
-              navigation={{
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-                clickable: true,
-              }}
-              modules={[EffectCoverflow, Pagination, Navigation]}
-              className="swiper_container"
-            >
-                      <div className="swiper-pagination"></div>
+          <Swiper
+            effect={"coverflow"}
+            grabCursor={true}
+            centeredSlides={true}
+            loop={true}
+            slidesperview={"auto"}
+            coverfloweffect={{
+              rotate: 0,
+              stretch: 0,
+              depth: 100,
+              modifier: 2.5,
+            }}
+            pagination={{ el: ".swiper-pagination", clickable: true }}
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+              clickable: true,
+            }}
+            modules={[EffectCoverflow, Pagination, Navigation]}
+            className="swiper_container"
+          >
+            <div className="swiper-pagination"></div>
 
-              <SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={photos[0]}
+                alt="foto"
+                width="0"
+                height="0"
+                sizes="100vw"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </SwiperSlide>
 
-                <Image
-                  src={photos[0]}
-                  alt="foto"
-                  width="0"
-                  height="0"
-                  sizes="100vw"
-                  style={{ width: "100%", height: "auto" }}
-                />
-              </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={photos[1]}
+                alt="foto"
+                width="0"
+                height="0"
+                sizes="100vw"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </SwiperSlide>
 
-              <SwiperSlide>
-                <Image
-                  src={photos[1]}
-                  alt="foto"
-                  width="0"
-                  height="0"
-                  sizes="100vw"
-                  style={{ width: "100%", height: "auto" }}
-                />
-              </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={photos[2]}
+                alt="foto"
+                width="0"
+                height="0"
+                sizes="100vw"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </SwiperSlide>
 
-              <SwiperSlide>
-                <Image
-                  src={photos[2]}
-                  alt="foto"
-                  width="0"
-                  height="0"
-                  sizes="100vw"
-                  style={{ width: "100%", height: "auto" }}
-                />
-              </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={photos[3]}
+                alt="foto"
+                width="0"
+                height="0"
+                sizes="100vw"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </SwiperSlide>
+          </Swiper>
+        </Container>
 
-              <SwiperSlide>
-                <Image
-                  src={photos[3]}
-                  alt="foto"
-                  width="0"
-                  height="0"
-                  sizes="100vw"
-                  style={{ width: "100%", height: "auto" }}
-                />
-              </SwiperSlide>
-              </Swiper>
-
-              
-
-          </Container>
-
-          {/*           {
+        {/*           {
         num >= 1 ? <LeftArrowStyles onClick={(e) => restNum(e)}> ❰ </LeftArrowStyles> : ""
           }
           
@@ -146,9 +141,9 @@ function Card({ name, link, logo, photos, description }) {
           {
         num <= 2 ? <RightArrowStyles onClick={(e) => sumNum(e)}> ❱ </RightArrowStyles> : ""
           } */}
-        </ImageContainer>
+      </ImageContainer>
 
-        <div className="flex flex-col"></div>
+      <div className="flex flex-col"></div>
       <Link href={link}>
         {count === 1 ? (
           <SeeButton>See the proyect</SeeButton>
