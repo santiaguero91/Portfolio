@@ -30,7 +30,7 @@ const paginas = [
     name: "Henry-Countries",
     tecnologies:["html", "Javascript", "React", "Redux", "stlyedComponents", "APIs Integrations", "PostgreSql", ],
 
-    link: "https://pi-countries-santiaguero91.vercel.app/home",
+    link: "https://pi-countries-santiaguero91.vercel.app/",
     logo: countries,
     photos: [HChome,HCdetail, HCform,HClandin],
     description: "A Webpage used to  search for countries and their tourist activities.",
