@@ -8,12 +8,13 @@ export const Container = styled(motion.div)`
   flex-direction: column;
   margin: 0 auto;
   place-content: center;
-  padding: 1.5rem;
+  padding: 1.5rem, 0, 0, 0;
 `;
 
 export const CardDiv = styled(motion.div)`
   width: 90vw;
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding: 3.5rem 0;
   background-color: transparent;
   margin-bottom: 2rem;
@@ -22,55 +23,51 @@ export const CardDiv = styled(motion.div)`
   box-shadow: 0 1px 100px 2px rgba(100, 100, 100, 0.5);
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
+  .subCardDiv{
+    display: flex;
+  flex-direction: row;
+  }
 `;
+
 
 export const ImageContainer = styled(motion.div)`
 position: relative;
-width: 100%;
+width: 50%;
 height: fit-content;
 margin: 1rem 0 0 0;
-scale: 0.8;
+scale: 0.9;
+
 `;
 
 export const CardStats = styled(motion.div)`
   display: flex;
   flex-direction: column;
-  padding: 0 2.5rem;
+  .statTitle{
+    font-weight: 800;
+    margin: 0.5rem 0 ;
+  }
 `;
 
-
-
-export const RightArrowStyles = styled(motion.div)`
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  right: 10px;
-  font-size: 60px;
-  color: rgb(150, 150, 150);
-  z-index: 1;
-  cursor: pointer;
-`;
-export const LeftArrowStyles = styled(motion.div)`
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  left: 10px;
-  font-size: 60px;
-  color: rgb(150, 150, 150);
-  z-index: 1;
-  cursor: pointer;
-`;
 
 export const ProyectsName = styled(motion.h1)`
-  margin: 0 auto 0 5%;
+
+  padding-top: 3rem;
   margin-top: 0.5rem;
   font-weight: bold;
   font-size: 30px;
 `;
 
 export const ProyDescrip = styled(motion.h1)`
-  margin: 0.5rem auto 0.5rem 5%;
+  margin: 0.5rem 0 0.5rem 0;
   border: 0;
+`;
+
+export const TechnologiesDiv = styled(motion.div)`
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem 5rem;
+  scale: 2;
+  width: fit-content;
 `;
 
 export const SeeButton = styled(motion.button)`

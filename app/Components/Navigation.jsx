@@ -31,29 +31,28 @@ dispatch(increment())
               initial={{ y: -100 }}
               animate={{ y: 0 }}
               transition={{ delay: 1.2, transition: { duration: 2 } }}
-            >
-              <Link href="/">Home</Link>
+            > 
+            {count === 1 ? <Link href="/">Home</Link> : <Link href="/">Inicio</Link>}
             </ItemLista>
             <ItemLista
               initial={{ y: -100 }}
               animate={{ y: 0 }}
               transition={{ delay: 1.6, transition: { duration: 2 } }}
-            >
-              <Link href="/About">About</Link>
+            > {count === 1 ? <Link href="/About">About</Link> : <Link href="/About">Sobre mi</Link>}
+              
             </ItemLista>
             <ItemLista
               initial={{ y: -100 }}
               animate={{ y: 0 }}
               transition={{ delay: 2, transition: { duration: 2 } }}
-            >
-              <Link href="/Works">Works</Link>
+            > {count === 1 ? <Link href="/Works">Works</Link> : <Link href="/Works">Proyectos</Link>}
             </ItemLista>
             <ItemLista
               initial={{ y: -100 }}
               animate={{ y: 0 }}
               transition={{ delay: 2.4, transition: { duration: 2 } }}
-            >
-              <Link href="/Contact">Contact</Link>
+            > {count === 1 ? <Link href="/Contact">Contact</Link> : <Link href="/Contact">Contacto</Link>}
+              
             </ItemLista>
           </ul>
     </div>

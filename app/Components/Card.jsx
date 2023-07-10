@@ -6,10 +6,9 @@ import {
   ProyectsName,
   ProyDescrip,
   CardStats,
-  RightArrowStyles,
-  LeftArrowStyles,
   ImageContainer,
   SeeButton,
+  TechnologiesDiv,
 } from "./CardsStyle";
 import { useState } from "react";
 import { useAppSelector } from "../../Redux/hooks";
@@ -21,45 +20,19 @@ import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import { EffectCoverflow, Pagination, Navigation } from "swiper";
 
-function Card({ name, link, logo, photos, description }) {
+function Card({ name, link, logo, photos, description,tasks,skills,technologies,descriptionEsp,skillsEsp,tasksEsp }) {
   const [num, setNum] = useState(0);
-  const count = useAppSelector((state) => state.counterReducer.counter);
-
-  function sumNum() {
-    num > 2 ? "" : setNum(num + 1);
-  }
-  function restNum() {
-    num < 1 ? "" : setNum(num - 1);
-  }
+  const count = useAppSelector(state=>state.counterReducer.counter)
 
   return (
     <CardDiv
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
     >
-      <CardStats>
-        <div className="w-1/12 absolute rounded-full">
-          <Image
-            src={logo}
-            alt="logo"
-            className="w-1/2 absolute rounded-full"
-          />
-        </div>
-        <ProyectsName>{name}</ProyectsName>
-        <ProyDescrip>{description}</ProyDescrip>
-      </CardStats>
-
-      <ImageContainer>
-        <Container>
+      <div className="subCardDiv">
+          <ImageContainer><Container>
           <div className="slider-controler">
-            <RightArrowStyles className="swiper-button-prev slider-arrow">
-              ❰
-            </RightArrowStyles>
-            <LeftArrowStyles className="swiper-button-next slider-arrow">
-              ❱
-            </LeftArrowStyles>
           </div>
-
           <Swiper
             effect={"coverflow"}
             grabCursor={true}
@@ -127,22 +100,51 @@ function Card({ name, link, logo, photos, description }) {
               />
             </SwiperSlide>
           </Swiper>
-        </Container>
+        </Container></ImageContainer>
 
-        {/*           {
-        num >= 1 ? <LeftArrowStyles onClick={(e) => restNum(e)}> ❰ </LeftArrowStyles> : ""
-          }
-          
+        {count === 1 ? 
+   <CardStats>
+   <div className="w-1/12 absolute rounded-full">
+     <Image
+       src={logo}
+       alt="logo"
+       className="w-1/2 absolute rounded-full"
+     />
+   </div> 
+   <ProyectsName>{name}</ProyectsName>
+   <ProyDescrip>{description}</ProyDescrip>
+   <div className='statTitle'>Tasks:</div>
+   <div>{tasks}</div>
+   <div className='statTitle'>Technologies:</div>
+   <TechnologiesDiv>{technologies}</TechnologiesDiv>
+   <div className='statTitle'>Skills developed:</div>
+   <div>{skills}</div>
+
+ </CardStats> : <CardStats>
+        <div className="w-1/12 absolute rounded-full">
           <Image
-            src={photos[num]}
-            alt="foto"
-            className="mx-auto rounded-lg "
+            src={logo}
+            alt="logo"
+            className="w-1/2 absolute rounded-full"
           />
-          {
-        num <= 2 ? <RightArrowStyles onClick={(e) => sumNum(e)}> ❱ </RightArrowStyles> : ""
-          } */}
-      </ImageContainer>
+        </div> 
+        <ProyectsName>{name}</ProyectsName>
+        <ProyDescrip>{descriptionEsp}</ProyDescrip>
+        <div className='statTitle'>Tareas:</div>
+        <div>{tasksEsp}</div>
+        <div className='statTitle'>Tecnologias:</div>
+        <TechnologiesDiv>{technologies}</TechnologiesDiv>
+        <div className='statTitle'>Habilidades desarrolladas:</div>
+        <div>{skillsEsp}</div>
 
+      </CardStats>}
+
+
+
+
+        
+
+      </div>
       <div className="flex flex-col"></div>
       <Link href={link}>
         {count === 1 ? (
@@ -151,43 +153,9 @@ function Card({ name, link, logo, photos, description }) {
           <SeeButton>Ver el Proyecto</SeeButton>
         )}
       </Link>
+
+    
     </CardDiv>
   );
 }
 export default Card;
-
-{
-  /* 
-<CardDiv
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
-          >
-            <CardStats>
-              <div className="w-1/12 absolute rounded-full">
-                <Image
-                  src={pagina.logo}
-                  alt="logo"
-                  className="w-1/2 absolute rounded-full"
-                />
-              </div>
-              <ProyectsName>{pagina.name}</ProyectsName>
-              <ProyDescrip>{pagina.description}</ProyDescrip>
-              <ImageContainer>
-                <LeftArrowStyles> ❰ </LeftArrowStyles>
-                <Image
-                  src={pagina.photo}
-                  alt="foto"
-                  className="mx-auto rounded-lg "
-                />
-                <RightArrowStyles> ❱ </RightArrowStyles>
-              </ImageContainer>
-
-              <div className="flex flex-col"></div>
-            </CardStats>
-            <Link href={pagina.link}>
-
-            <SeeButton>See the proyect</SeeButton></Link>
-          </CardDiv> 
-        
-        */
-}
