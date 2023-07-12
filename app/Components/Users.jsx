@@ -10,6 +10,11 @@ import HCform from "../img/HCForm.png";
 import Clandin from "../img/CLandin.png";
 import Cdetail from "../img/CDetail.png";
 import CCart from "../img/CCart.png";
+import PortHome from "../img/PortHome.png";
+import PortAbout from "../img/PortAbout.png";
+import PortProyects from "../img/PortProyects.png";
+import PortContact from "../img/PortContact.png";
+import foto from "../img/Portfolio.png";
 import { Container } from "./CardsStyle";
 
 //icons
@@ -26,6 +31,8 @@ import {
   SiSequelize,
   SiRedux,
 } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+
 
 const paginas = [
   {
@@ -89,7 +96,33 @@ const paginas = [
       "Una página web utilizada para buscar países y sus actividades turísticas.",
     skills: "Autonomy, organization, dry code.",
     skillsEsp: "Autonomía, organización, código seco.",
-  },
+  },{
+    id: 3,
+    name: "Portfolio",
+    technologies: [
+      <TbBrandNextjs key="1" title="Nextjs" />,
+      <SiRedux key="2" title="Redux" />,
+      <IoLogoJavascript key="3" title="JavaScript" />,
+      <SiStyledcomponents key="4" title="Styledcomponents" />,
+      <IoLogoNodejs key="5" title="NodeJS" />,
+      <BsGit key="6" title="Git" />,
+      <AiFillGithub key="7" title="GitHub"/>,
+    ],
+    tasks:
+      "I used my Portfolio as an opportunity to learn and apply the features of Next.js, such as server-side rendering, client-side rendering, page routing, SEO, among others.",
+      tasksEsp:
+      "Utilize mi Portfolio como oportunidad para aprender y aplicar las funciones de Next.js, como el renderizado del lado del servidor, el renderizado del lado del cliente, el enrutamiento de páginas, SEO, entre otros.",    
+      link: "https://portfolio-santiago-aguero-91.vercel.app",
+    logo: foto,
+    photos: [PortAbout, PortHome, PortProyects,PortContact],
+    description:
+      "I developed the entire Portfolio from scratch, including selecting a color palette and implementing all the necessary features. The contact form is controlled and utilizes Nodemailer to send emails to my personal Gmail account",
+      descriptionEsp:
+      "Desarrollé todo el Portfolio desde cero, incluyendo la selección de una paleta de colores y la implementación de todas las funciones necesarias. El formulario de contacto está controlado y utiliza Nodemailer para enviar correos electrónicos a mi cuenta personal de Gmail",
+    skills: "Autonomy, organization, coding patterns.",
+    skillsEsp: "Autonomía, organización, patrones de codificación.",
+
+  }
 ];
 
 function Cards() {

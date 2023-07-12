@@ -138,15 +138,9 @@ function Card({ name, link, logo, photos, description,tasks,skills,technologies,
         <div>{skillsEsp}</div>
 
       </CardStats>}
-
-
-
-
-        
-
       </div>
       <div className="flex flex-col"></div>
-      <Link href={link}>
+      <Link href={link} target="_blank">
         {count === 1 ? (
           <SeeButton>See the proyect</SeeButton>
         ) : (
