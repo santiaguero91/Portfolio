@@ -51,8 +51,8 @@ const technologyList = [
       icon: "https://w7.pngwing.com/pngs/38/177/png-transparent-sequelize-original-logo-icon.png",
     },
     {
-      name: "Angular",
-      icon: "https://w7.pngwing.com/pngs/271/444/png-transparent-angular-icon-hd-logo.png",
+      name: "Vue",
+      icon: "https://w7.pngwing.com/pngs/595/279/png-transparent-vue-js-javascript-library-angularjs-react-vue-js-template-angle-text-thumbnail.png",
     },
     {
       name: "Typescript",
@@ -62,6 +62,7 @@ const technologyList = [
       name: "Git",
       icon: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
     },
+    
   ];
 
   export default technologyList
