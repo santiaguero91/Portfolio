@@ -125,9 +125,9 @@ function Card({
       <div className="flex flex-col"></div>
       <Link href={link} target="_blank">
         {count === 1 ? (
-          <SeeButton>See the proyect</SeeButton>
+          <SeeButton>See proyect</SeeButton>
         ) : (
-          <SeeButton>Ver el Proyecto</SeeButton>
+          <SeeButton>Ver Proyecto</SeeButton>
         )}
       </Link>
     </CardDiv>
