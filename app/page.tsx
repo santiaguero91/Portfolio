@@ -11,17 +11,18 @@ import Works from "./Works/page";
 import Contact from "./Contact/page";
 import { Divider, FullStack, Hi, ContactDiv, PdfDiv } from "./pageStyle";
 import { motion } from "framer-motion";
-import { useAppSelector} from "../Redux/hooks"
+import { useAppSelector } from "../Redux/hooks";
 
 export default function Home() {
-  const count = useAppSelector(state=>state.counterReducer.counter)
+  const count = useAppSelector((state) => state.counterReducer.counter);
 
   return (
     <motion.div
       className="flex items-center flex-col"
       exit={{ scaleY: 0, transition: { duration: 1 } }}
     >
-      <div className="mt-10 mb-10 ml-7 mr-64 bg-transparent text-7xl font-serif	">
+      <div className="mt-10     mb-10     mx-7      lg:mx-64     bg-transparent    text-7xl font-serif">
+        {/* <div className="mt-10 mb-10 ml-7 mr-64 bg-transparent text-7xl font-serif	"> */}
         <Hi
           className="text-cyan-600 font-semibold"
           initial={{ x: -1000 }}
@@ -47,7 +48,7 @@ export default function Home() {
           Full-Stack Developer
         </FullStack>
       </div>
-      <div className="w-6/12 flex items-center flex-row mr-64">
+      <div className="w-6/12 flex items-center flex-row lg:mx-64">
         <div className=" w-full flex flex-row flex-wrap justify-between items-center">
           <motion.div
             initial={{ opacity: 0 }}
@@ -104,8 +105,9 @@ export default function Home() {
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
-      > <About />
-        
+      >
+        {" "}
+        <About />
       </motion.div>
 
       <Divider
@@ -115,8 +117,9 @@ export default function Home() {
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
-      >  <Works />
-        
+      >
+        {" "}
+        <Works />
       </motion.div>
       <Divider
         initial={{ width: 0 }}
@@ -125,8 +128,9 @@ export default function Home() {
       <ContactDiv
         initial={{ opacity: 0, y: 150 }}
         whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
-      > <Contact />
-        
+      >
+        {" "}
+        <Contact />
       </ContactDiv>
     </motion.div>
   );

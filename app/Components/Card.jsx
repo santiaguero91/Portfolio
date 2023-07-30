@@ -44,7 +44,6 @@ function Card({
       <div className="subCardDiv">
         <ImageContainer>
           <Container>
-            <div className="slider-controler"></div>
             <Swiper
               effect={"coverflow"}
               grabCursor={true}
@@ -66,7 +65,7 @@ function Card({
               modules={[EffectCoverflow, Pagination, Navigation]}
               className="swiper_container"
             >
-              <div className="swiper-pagination"></div>
+              {/* <div className="swiper-pagination"></div> */}
 
               {photos.map((photo, index) => (
                 <SwiperSlide key={index}>

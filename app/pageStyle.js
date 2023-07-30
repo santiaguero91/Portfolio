@@ -3,17 +3,16 @@ import { motion } from "framer-motion";
 
 import styled from "styled-components";
 
-
 export const MainDiv = styled(motion.div)`
-margin-top: 2.5rem;
-margin-bottom: 2.5rem;
-margin-left: 1.75rem;
-margin-right: 16rem;
-background-color: transparent;
-font-size: 5rem;
-font-family: serif;
-`;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: 1.75rem;
+  margin-right: 16rem;
+  background-color: transparent;
+  font-size: 5rem;
+  font-family: serif;
 
+`;
 
 export const Divider = styled(motion.div)`
   margin: 10rem 0 5rem;
@@ -25,9 +24,16 @@ export const Divider = styled(motion.div)`
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 `;
 
-export const Hi = styled(motion.h2)``;
+export const Hi = styled(motion.h2)`
+  @media (min-width: 630px) {
+    font-size: 4rem;
+  }
+  `;
 
-export const FullStack = styled(motion.h3)``;
+export const FullStack = styled(motion.h3)`
+  @media (min-width: 630px) {
+    font-size: 4rem;
+  }`;
 
 export const ContactDiv = styled(motion.div)`
   width: 100%;
@@ -54,5 +60,3 @@ export const PdfDiv = styled(motion.div)`
     font-size: 20px;
   }
 `;
-
-
