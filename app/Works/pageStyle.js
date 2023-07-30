@@ -8,6 +8,9 @@ flex-direction: column;
 width: 100%;
 height: fit-content;
 margin: 5% auto;
+@media (max-width: 770px) {
+    width: fit-content;
+  }
 `;
 
 export const ThisAre = styled(motion.h1)`

@@ -5,6 +5,7 @@ import {
   Container,
   FormPlaque,
   InputContainer,
+  MyEmail,
   SendButton,
   WorkTogether,
 } from "./pageStyle";
@@ -86,6 +87,7 @@ export default function Contact() {
       {count === 1 ? (
         <Container>
           <WorkTogether>I&apos;m eager to work together!</WorkTogether>
+          <MyEmail>santiagonaguero@gmail.com</MyEmail>
           <FormPlaque>
             <form ref={form} onSubmit={sendEmail}>
               <InputContainer>
