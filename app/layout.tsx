@@ -1,3 +1,4 @@
+"use client";
 
 import "./globals.css";
 import Navigation from "./Components/Navigation";

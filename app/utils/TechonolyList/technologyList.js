@@ -1,11 +1,7 @@
 import javascript from "./icono-javascript.png"
 
 const technologyList = [
-    {
-      name: "JavaScript",
-      icon: "https://www.citypng.com/public/uploads/preview/js-javascript-round-logo-icon-png-11662226392lsrrajcm0y.png",
 
-    },
     {
       name: "HTML 5",
       icon: "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png",
@@ -15,12 +11,29 @@ const technologyList = [
       icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png",
     },
     {
+      name: "JavaScript",
+      icon: "https://www.citypng.com/public/uploads/preview/js-javascript-round-logo-icon-png-11662226392lsrrajcm0y.png",
+
+    },
+    {
+      name: "Typescript",
+      icon: "https://w7.pngwing.com/pngs/915/519/png-transparent-typescript-hd-logo-thumbnail.png",
+    },
+    {
       name: "React JS",
       icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/800px-React.svg.png",
     },
     {
       name: "Next JS",
       icon: "https://static-00.iconduck.com/assets.00/brand-nextjs-icon-256x256-zm2coebd.png",
+    },
+    {
+      name: "Nest JS",
+      icon: "https://www.cadenhub.com/wp-content/uploads/2023/06/nest-js-icon.png",
+    },
+    {
+      name: "GraphQL",
+      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/512px-GraphQL_Logo.svg.png?20161105194737",
     },
     {
       name: "Redux Toolkit",
@@ -53,10 +66,6 @@ const technologyList = [
     {
       name: "Vue",
       icon: "https://w7.pngwing.com/pngs/595/279/png-transparent-vue-js-javascript-library-angularjs-react-vue-js-template-angle-text-thumbnail.png",
-    },
-    {
-      name: "Typescript",
-      icon: "https://w7.pngwing.com/pngs/915/519/png-transparent-typescript-hd-logo-thumbnail.png",
     },
     {
       name: "Git",
