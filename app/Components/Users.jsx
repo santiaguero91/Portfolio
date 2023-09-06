@@ -211,9 +211,9 @@ const paginas = [
     logo: bubbleIcon,
     photos: [recetarioHome, recetarioProfile],
     description:
-    "Application with the capacity of: account creation, login and logout, editing of profile information, creation of recipes, ordering according to different criteria, ability to access the profile information of other creators, and implementation of a system of Integrated upvotes.",
+    "Application made with Bubble.io with the capacity of: account creation, login and logout, editing of profile information, creation of recipes, ordering according to different criteria, ability to access the profile information of other creators, and implementation of a system of Integrated upvotes.",
     descriptionEsp:
-      "Aplicación con capacidad de: creacion de cuentas, logeo y deslogeo, edicion de informacion del perfil, creacion de recetas, ordenamiento según distintos criterios, capacidad de acceder a la informacion de perfil de otros creadores, e implementacion de un sistema de Upvotes integrado.",
+      "Aplicación desarrolada con Bubble.io con capacidades de: creacion de cuentas, logeo y deslogeo, edicion de informacion del perfil, creacion de recetas, ordenamiento según distintos criterios, capacidad de acceder a la informacion de perfil de otros creadores, e implementacion de un sistema de Upvotes integrado.",
     skills: "Autonomy, Organization, Attention to detail.",
     skillsEsp: "Autonomía, Organización, Atención al detalle.",
   }, 
