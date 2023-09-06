@@ -184,16 +184,16 @@ const paginas = [
       <AiFillGithub key="9" title="GitHub" />,
     ],
     tasks:
-    "I developed this application as a self-taught way of learning the technologies: NestJs, GraphQL and ApolloClient. Able to create and delete notes, in addition to assigning statuses and categories and modifying their combined filter properties.",
+    "I designed the entire user interface with special attention to UX, and its connection in the backend and deploy",
     tasksEsp:
-    "Desarrolle esta aplicacion de manera autodidacta como metodo de aprendizaje de las tecnologias: NestJs, GraphQL y ApolloClient. Con capacidad de creacion y eliminacion de notas, ademas de asignacion de estados y categorias y modificacion de sus propiedades filtros combinados.",
+    "Diseñé toda la interfaz de usuario con especial atención a UX, y su conexión en el backend y despliegue",
     link: "https://nestnotes.vercel.app",
     logo: nestJsIcon,
     photos: [nestNotes],
     description:
-      "I designed the entire user interface with special attention to UX, and its connection in the backend and deploy",
+    "I developed this application as a self-taught way of learning the technologies: NestJs, GraphQL and ApolloClient. Able to create and delete notes, in addition to assigning statuses and categories and modifying their combined filter properties.",
     descriptionEsp:
-      "Diseñé toda la interfaz de usuario con especial atención a UX, y su conexión en el backend y despliegue",
+    "Desarrolle esta aplicacion de manera autodidacta como metodo de aprendizaje de las tecnologias: NestJs, GraphQL y ApolloClient. Con capacidad de creacion y eliminacion de notas, ademas de asignacion de estados y categorias y modificacion de sus propiedades filtros combinados.",
     skills: "Autonomy, organization, attention to detail, assertive communication.",
     skillsEsp: "Autonomía, organización, atención al detalle, comunicación asertiva.",
   } , 
