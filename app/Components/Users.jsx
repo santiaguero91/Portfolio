@@ -191,9 +191,9 @@ const paginas = [
     logo: nestJsIcon,
     photos: [nestNotes],
     description:
-      "I designed the entire user interface with special attention to UX, I made the integration of the map and its implements with LeafLet and its connection in the backend, socket.io, the deploy",
+      "I designed the entire user interface with special attention to UX, and its connection in the backend and deploy",
     descriptionEsp:
-      "Diseño de una aplicación que incluye un mapa de impacto positivo capaz de procesar archivos KML, GPX y GeoJson con diversas ubicaciones y agregar marcadores. Además de poder agregar marcadores manualmente, poder agregarles contenidos y sistema de clasificación para pdoer ser filtrados.",
+      "Diseñé toda la interfaz de usuario con especial atención a UX, y su conexión en el backend y despliegue",
     skills: "Autonomy, organization, attention to detail, assertive communication.",
     skillsEsp: "Autonomía, organización, atención al detalle, comunicación asertiva.",
   } , 
