@@ -1,4 +1,3 @@
-import javascript from "./icono-javascript.png"
 
 const technologyList = [
 
@@ -36,6 +35,10 @@ const technologyList = [
       icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/512px-GraphQL_Logo.svg.png?20161105194737",
     },
     {
+      name: "Apollo",
+      icon: "https://pbs.twimg.com/profile_images/1498346889724317697/qzxJVuVR_400x400.png",
+    },
+    {
       name: "Redux Toolkit",
       icon: "https://img.stackshare.io/service/7374/react-redux.png",
     },
@@ -47,6 +50,7 @@ const technologyList = [
       name: "MaterialUI",
       icon: "https://icons.veryicon.com/png/o/object/material_design_icons/material-ui-1.png",
     },
+
     {
       name: "Bootstrap",
       icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png",

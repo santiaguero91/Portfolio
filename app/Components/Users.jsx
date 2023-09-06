@@ -15,12 +15,18 @@ import PortAbout from "../img/PortAbout.png";
 import PortProyects from "../img/PortProyects.png";
 import PortContact from "../img/PortContact.png";
 import foto from "../img/Portfolio.png";
+import recetarioHome from "../img/RecetarioHome.png";
+import recetarioProfile from "../img/RecetarioProfile.png";
 import germinaricon from "../img/germinaricon.jpg";
 import germinarmapa from "../img/GerminarMap.png";
+import nestNotes from "../img/NestNotes.png";
+import nestJsIcon from "../img/NestJs.png";
+import bubbleIcon from "../img/bubble.png";
 
 import { Container } from "./CardsStyle";
 
 //icons
+import { FaBimobject } from "react-icons/fa";
 import { BiLogoFirebase, BiLogoMongodb } from "react-icons/bi";
 import { BsGit, BsTrello } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
@@ -33,6 +39,11 @@ import {
   SiPostgresql,
   SiSequelize,
   SiRedux,
+  SiApollographql,
+  SiGraphql,
+  SiNestjs,
+  SiTypescript,
+  SiMui
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
@@ -128,7 +139,7 @@ const paginas = [
   },
   {
     id: 4,
-    name: "Germinar (En desarrollo / In development)",
+    name: "Germinar",
     technologies: [
       <IoLogoReact key="1" title="ReactJS" />,
       <SiRedux key="2" title="Redux" />,
@@ -144,19 +155,68 @@ const paginas = [
       <BsTrello key="13" title="Trello" />,
     ],
     tasks:
-      "I designed most of the user interface with special attention to UX and the modern design, made the integration with Mercado Pago and its conection in the backend, deploy",
+    "I designed the user interface with special attention to UX and the modern design, made the integration with Mercado Pago and its conection in the backend, deploy",
     tasksEsp:
-      "Diseñé la totalidad de la interfaz de usuario con especial atención a UX, realicé la integración del mapa y sus implementos con LeafLet y su conexión en el backend, socket.io, el deploy",
+    "Diseñé la totalidad de la interfaz de usuario con especial atención a UX, realicé la integración del mapa y sus implementos con LeafLet y su conexión en el backend, socket.io, el deploy",
     link: "https://github.com/santiaguero91/MapaGerminar",
     logo: germinaricon,
     photos: [germinarmapa],
+    description:
+      "Design of an application that includes a positive impact map capable of processing KML, GPX and GeoJson files with various locations and adding markers. In addition to being able to add bookmarks manually, being able to add content and a classification system to be able to be filtered.",
+    descriptionEsp:
+      "Diseño de una aplicación que incluye un mapa de impacto positivo capaz de procesar archivos KML, GPX y GeoJson con diversas ubicaciones y agregar marcadores. Además de poder agregar marcadores manualmente, poder agregarles contenidos y sistema de clasificación para poder ser filtrados.",
+    skills: "Autonomy, organization, attention to detail.",
+    skillsEsp: "Autonomía, organización, atención al detalle.",
+  }, 
+  {
+    id: 5,
+    name: "Nest-NoteApp",
+    technologies: [
+      <SiNestjs key="1" title="Nestjs "/>,
+      <SiGraphql key="2" title="GraphQL" />,
+      <SiTypescript key="3" title="Typescript" /> ,
+      <SiMui key="4" title="Material UI" /> ,
+      <SiApollographql key="4" title="Apollo" />,
+      <SiStyledcomponents key="5" title="Styledcomponents" />,
+      <IoLogoNodejs key="6" title="NodeJS" />,
+      <BiLogoMongodb key="7" title="MongoDB" />,
+      <BsGit key="8" title="Git" />,
+      <AiFillGithub key="9" title="GitHub" />,
+    ],
+    tasks:
+    "I developed this application as a self-taught way of learning the technologies: NestJs, GraphQL and ApolloClient. Able to create and delete notes, in addition to assigning statuses and categories and modifying their combined filter properties.",
+    tasksEsp:
+    "Desarrolle esta aplicacion de manera autodidacta como metodo de aprendizaje de las tecnologias: NestJs, GraphQL y ApolloClient. Con capacidad de creacion y eliminacion de notas, ademas de asignacion de estados y categorias y modificacion de sus propiedades filtros combinados.",
+    link: "https://nestnotes.vercel.app",
+    logo: nestJsIcon,
+    photos: [nestNotes],
     description:
       "I designed the entire user interface with special attention to UX, I made the integration of the map and its implements with LeafLet and its connection in the backend, socket.io, the deploy",
     descriptionEsp:
       "Diseño de una aplicación que incluye un mapa de impacto positivo capaz de procesar archivos KML, GPX y GeoJson con diversas ubicaciones y agregar marcadores. Además de poder agregar marcadores manualmente, poder agregarles contenidos y sistema de clasificación para pdoer ser filtrados.",
     skills: "Autonomy, organization, attention to detail, assertive communication.",
     skillsEsp: "Autonomía, organización, atención al detalle, comunicación asertiva.",
-  },
+  } , 
+  {
+    id: 6,
+    name: "Santi's Recetary",
+    technologies: [
+      <FaBimobject key="1" title="Bubble.io" />,
+    ],
+    tasks:
+    "I designed the user interface with special attention to UX and the modern design.",
+    tasksEsp:
+    "Diseñé la totalidad de la interfaz de usuario con especial atención a UX.",
+    link: "https://dessert-book-48620.bubbleapps.io/version-test",
+    logo: bubbleIcon,
+    photos: [recetarioHome, recetarioProfile],
+    description:
+    "Application with the capacity of: account creation, login and logout, editing of profile information, creation of recipes, ordering according to different criteria, ability to access the profile information of other creators, and implementation of a system of Integrated upvotes.",
+    descriptionEsp:
+      "Aplicación con capacidad de: creacion de cuentas, logeo y deslogeo, edicion de informacion del perfil, creacion de recetas, ordenamiento según distintos criterios, capacidad de acceder a la informacion de perfil de otros creadores, e implementacion de un sistema de Upvotes integrado.",
+    skills: "Autonomy, Organization, Attention to detail.",
+    skillsEsp: "Autonomía, Organización, Atención al detalle.",
+  }, 
 ];
 
 function Cards() {
