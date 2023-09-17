@@ -10,6 +10,11 @@ const technologyList = [
       icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png",
     },
     {
+      name: "Python",
+      icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYY0pvHu6oaaJRADcCoacoP5BKwJN0i1nqFNCnmKvN&s",
+
+    },
+    {
       name: "JavaScript",
       icon: "https://www.citypng.com/public/uploads/preview/js-javascript-round-logo-icon-png-11662226392lsrrajcm0y.png",
 
@@ -66,6 +71,18 @@ const technologyList = [
     {
       name: "Sequelize",
       icon: "https://w7.pngwing.com/pngs/38/177/png-transparent-sequelize-original-logo-icon.png",
+    },
+    {
+      name: "Docker",
+      icon: "https://w7.pngwing.com/pngs/237/269/png-transparent-docker-logo-docker-logo-kubernetes-software-deployment-engineer-logo-logo-area-line-thumbnail.png",
+    },
+    {
+      name: "Microservices",
+      icon: "https://cdn-icons-png.flaticon.com/512/6357/6357632.png",
+    },
+    {
+      name: "AWS",
+      icon: "https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png",
     },
     {
       name: "Vue",
